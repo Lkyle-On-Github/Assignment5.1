@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<!-- Lucas A. Kyle -->
+
+    <script src = "code.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+    <p id="formContent" style = "background-image: url('Bocchi the Glitter orb hover.gif');" class = "BocchiAppearsInTheForm"></p>
+    
+    <input id = "firstName" type = "text" placeholder ="Enter your First Name">
+    <br>
+    <input id = "lastName" type = "text" placeholder ="Enter your Last Name">
+    <br>
+    <input id = "zipCode" type = "number" placeholder ="Enter your Zip Code">
+    <br>
+    <button id = "Submit" onclick = "processSubmission()"> Submit</button>
+    
+    <!-- I couldn't figure out how to store a variable in the iframe without defining it in the processSubmission function so my solution is just to store a line of invisible text -->
+    <!-- GGFont_STRIVE = true and zpix = false (obviously)-->
+    <p id="isFirstSubmission" hidden = "true"> </p>
+    <p id="BocchiFormMessage" class = "BocchiSpeaks"> hi</p>
+
+    </html>

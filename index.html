@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<!-- Lucas A. Kyle 10/7/2024-->
+
+<script src = "code.js"></script>
+
+<head>
+	<link rel="stylesheet" href="main.css">
+	<title>INDEX</title>
+</head>
+
+
+
+<body onpageshow = "initializeIndex()">
+	<audio id = "Trigger With a Brutish Impulse">
+		<!--This song is definetly copyright protected but like I bought the digital soundtrack on steam so I'm pretty sure that means I'm allowed to use it for non business purposes-->
+		<!--Stop Beatin A-round Da Boosh!-->
+		<source src="014_Trigger.mp3" type="audio/mpeg">
+	  </audio>
+	<p>
+	<a id = "startButton"><button  onclick = "startSlide()"> Move Image </button></a>
+	<a id = "stopButton"><button onclick = "stopSlide()" disabled> Stop Image </button></a>
+	Movement area: <input id = "userBoundary" type = "number" placeholder ="200" oninput="updateBounds()">
+	</p>
+	<!-- bolded because of how important it is -->
+	<header><h1 class="GGfont"> <b>!IMPORTANT! !DRAMA!</b> </h1> </header>
+	<!--Kinda sucks because I had already added my own navigation before noticing that this was required and putting this on all of my pages looks really ugly but whatever.-->
+	
+	<nav>
+		<h2>
+			<!--it also doesnt say that pages shouldn't have navigation to themselves so I'm worried that if I don't include it I will lose points so thats why I am keeping it.-->
+			<a href="index.html">Home</a>
+		</h2>
+		<h2>
+			<a href="boards.html">Boards</a>
+		</h2>
+		<h2>
+			<a href="strings.html">Strings</a>
+		</h2>
+		<h2>
+			<a href="game.html">Game</a>
+		</h2>
+	</nav>
+	<p>
+		<!-- yes I made this and also its an in joke dw about it -->
+		<img id = "stopBeatingAroundDaBush" src = "Jerma985 CAUGHT BEATING AROUND DA BOOSH.png" alt = "Jerma985 looking in horror at an image of him Beating Around against Da Boosh" style	=	"margin-top: 0px; margin-left: 0px;">
+	</p>
+	<p id = "returnButton"> <a href = "boards.html"><button> Return </button></a></p>
+
+	<footer>
+        Lucas A. Kyle <br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd<br>
+        Tempe, AZ 85283
+    </footer>
+</body>
+
+</html>

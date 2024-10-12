@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<!-- Lucas A. Kyle -->
+<!-- Return button appears after attempting the game -->
+<script src = "code.js"></script>
+
+<head>
+	<link rel="stylesheet" href="main.css">
+	<title>GAME</title>
+</head>
+
+<body onpageshow = "initializeGame()">
+    <!--says the nav has to be below a header so-->
+    
+    <!-- Putting the button in a paragraph because I don't know how to delete it otherwise lol-->
+    <header></header>
+    <nav>
+		<h2>
+			<a href="index.html">Home</a>
+		</h2>
+		<h2>
+			<a href="boards.html">Boards</a>
+		</h2>
+		<h2>
+			<a href="strings.html">Strings</a>
+		</h2>
+		<h2>
+			<a href="game.html">Game</a>
+		</h2>
+	</nav>
+    <p id = "buttonP">
+         
+
+	    <button id = "button" onclick = "gameButton()"> Press this button when the number below equals </button> 
+        <!-- I'm using a even though this isnt a link because I can edit it in the Js without it starting with a line break like p would do.-->
+        <a id = "startingNumber" > </a>
+        
+    </p>
+    <!-- the text and image objects for the victory/lose screens-->
+    <p id = "randomNumber"></p>
+    <h1 id = "result"> </h1>
+    <img id = "loseImage" src = "" style = "width: 300px;">
+    <img id = "winImage" src = "" style = "width: 200px;">
+    <p id = "resultText" class = ""></p>
+    <a id = "returnButton" href = "boards.html"></a>
+
+    <footer>
+        Lucas A. Kyle <br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd<br>
+        Tempe, AZ 85283
+    </footer>
+</body>
+
+
+</html>

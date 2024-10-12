@@ -1,0 +1,103 @@
+.NSO {
+/* Gamer font */
+    font-family: "zpix";
+    font-weight: 900;
+    font-size: 12px;
+
+    
+}
+
+.GamerMode {
+/* Gamer colors */
+    background-color: black;
+    color: #20ff00;
+    font-family: "Courier";
+}
+
+.GamerTable{
+        /*Table for Gamers */
+        border-spacing: 0px;
+        th {
+            border: 1px solid #20ff00;
+        }
+        td {
+            border: 1px solid #20ff00;
+            font-family: "zpix";
+            font-weight: 900;
+            font-size: 12px;
+
+        }
+        button {
+            border: 1px solid #20ff00;
+            background-color: black;
+            color: #20ff00;
+            font-family: "zpix";
+            font-weight: 900;
+            font-size: 12px;
+            
+        }
+        /* color changes on hover just like a normal button*/
+        button:hover {
+            background-color: #222222;
+        }
+}
+
+.GGfont {
+    font-family: "GGfont_STRIVE";
+    font-size: 233%;
+    text-align: left;
+}
+
+.ORB {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+.BocchiSpeaks {
+    color:hotpink;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.BocchiWhisper {
+    color:hotpink;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+}
+.BocchiAppears {
+    /* for the Bocchi the Glitter s
+    I was originally hoping to have the text appear above the image in HTML but I spent a while trying to make the text overlay with
+    the image without it effecting any of the other text on screen and eventually I settled on adding some cool animations to make
+    up for it. 
+    I already had the Bocchi the Glitter gif and the Orb made but the hovering and text animation had to be done
+    in Adobe After Effects and Premiere */
+        
+        background-position: right top;
+        background-repeat: no-repeat;
+        /* text margin at the width of the image*/
+        margin-right: 397px;
+}
+
+
+
+nav {
+    height: 6000px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+footer {
+    text-align: center;
+    margin-right: 200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#stopBeatingAroundDaBush {
+    margin-right: 200px;
+    width:370px;
+    height:375px;
+    
+}

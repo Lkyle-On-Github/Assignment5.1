@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<!-- Lucas A. Kyle -->
+
+<script src = "code.js"></script>
+
+<head>
+	<link rel="stylesheet" href="main.css">
+	<title>Strings</title>
+    
+</head>
+    
+<body onpageshow = "initializeStrings()" style = "background-image: url('Bocchi the Glitter Pondering her orb.gif');" class = "BocchiAppears">
+    <!--hopefully I remember to finish the dialouge after I decide how the code works.-->
+    <!--I did :) -->
+    
+    
+        <!-- header no longer has the right id but I don't mind how it looks too much so I'll just leave it -->
+        <header class = "BocchiSpeaks">Oh hey, didnt see you there. My name's Bocchi the Glitter. </header>
+        <!-- a previous assignment told me to set the nav height to 6000px, while I assume this was a typo I was required to do it but I have to fix it for this page because the form only wants to appear below the nav and I don't want it appearing a million miles below the screen. -->
+        <nav style="height: 300px;">
+		<h2>
+			<a href="index.html">Home</a>
+		</h2>
+		<h2>
+			<a href="boards.html">Boards</a>
+		</h2>
+		<h2>
+			<a href="strings.html">Strings</a>
+		</h2>
+		<h2>
+			<a href="game.html">Game</a>
+		</h2>
+	</nav>
+    <p id = "BocchiGreeting"  class = "BocchiSpeaks"> 
+        I'm just here 
+        pondering my orb, but if you need me too I could have it tell you whether or not 
+        a given string is a palendrome if you want. So uhh all you would have to do is 
+        just enter the text down there and then I can whisper it into my orb and then it
+        would tell us but I should warn you it speaks kinda big and is also kinda scary
+        when it talks so its fine if you don't want to. Oh I almost forgot! when you are 
+        done entering your text you have to press the period key... but if you don't want
+        to have a period at the end thats ok you can just use an underscore and I can
+        explain it to the orb they'll be fine with it I think. so anyways yeah you can 
+        do that if you want I'll just be sitting here... OH WAIT I SUPER ALMOST FORGOT!
+        Ive tried this before and basically the orb doesn't really like filtering out , 
+        and - and stuff like that. it only really likes filtering out . and   so just make
+        sure that if you use any other symbols or punctuation or whatever that they are all 
+        symmetrical even if they arent technically letters. its not my fault, its the orb!
+    </p>
+    
+    <!--I'm not sure if the program is supposed to only allow one word to be entered at a time or not-->
+    <!--Since I'm confused about the assignment directions I am going to allow for both.-->
+    <input id = "GGOrbInterface" type = "text" oninput = "checkInput()">
+    <!--Messages from Bocchi the Glitter that go under the entry box-->
+    <a id = "BocchiBonusMessage" class = "BocchiWhisper"></a>
+    <p id = "Bocchi2ndMessage" class = "BocchiSpeaks"></p>
+    <p id = "curroutput"></p>
+    <!--Messages from Bocchi the Glitter that go under the entry box-->
+    <p id = "fulloutput" class = "ORB"></p>
+    <p id = "BocchiBottomMessage"></p>
+    <p id = "Sign up prompt" > Dont have an account?
+    <button id = "Account Button one" onclick = "accountSetup()"> Register Account With The Orb</button>
+    </p>
+    <iframe id = "AccountCreationForm" src = "" style="border:none;"></iframe>
+    <!--silly little easter egg-->
+    
+    <p  id = "returnButton"> <a href = "boards.html"><button onmousedown = "BocchiBye()" ondragenter = "BocchiNoBye()"> Return </button></a>  <br> <a class = "BocchiSpeaks" id = "byeMessage"></a></p>
+    
+    <footer>
+        Lucas A. Kyle <br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd<br>
+        Tempe, AZ 85283
+    </footer>
+</body>
+
+</html>
